@@ -1,0 +1,21 @@
+{
+  "name": "protractorpractice",
+  "version": "1.0.0",
+  "description": "Learn Protractor",
+  "main": "index.js",
+  "dependencies": {
+    "protractor": "^7.0.0",
+    "jasmine": "^3.7.0",
+    "jasmine-data-provider": "^2.2.0",
+    "protractor-jasmine2-html-reporter": "0.0.7"
+  },
+  "scripts": {
+    "webdriverupdate": "./node_modules/.bin/webdriver-manager update",
+    "webdriverstart": "./node_modules/.bin/webdriver-manager start",
+    "protractorrunner": "./node_modules/.bin/protractor conf.js",
+    "startwebdriver": "npm run webdriverupdate && npm run webdriverstart",
+    "smokesuite": "./node_modules/.bin/protractor conf.js --suite smoke"
+  },
+  "author": "Subhash",
+  "license": "ISC"
+}
